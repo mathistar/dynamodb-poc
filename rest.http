@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/customer
+Content-Type: application/json
+
+{
+  "name": "Mahesh",
+  "role": "Developer",
+  "dateOfBirth": "1986-09-02"
+}
+
+###
+GET http://localhost:8080/api/customers
+Accept: application/json
+
+###

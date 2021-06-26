@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springboot-aws-dynamodb
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  profiles:
+    active: local
+
+---
+
+amazon:
+  aws:
+    access-key: key
+    region: ap-southeast-1
+    secret-key: ''
+  dynamodb:
+    endpoint: 'http://localhost:8000/'
+spring:
+  config:
+    activate:
+      on-profile: local
